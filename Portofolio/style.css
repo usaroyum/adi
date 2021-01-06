@@ -1,0 +1,275 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* smooth scroll*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Font Color */
+
+
+:root{
+    --primary: #F6154B;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Container Size */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: auto;
+
+}
+
+/* Animation */
+
+/* Nav CSS */
+
+nav {
+    position: fixed;
+}
+.navigasi {
+    display: flex;
+    justify-content: center;
+    border-bottom: rgb(61, 61, 61) 1px solid;
+    height: 80px;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+
+    
+}
+
+
+.navigasi a{
+    text-decoration: none;
+    margin: 24px;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+
+.navigasi a:hover{
+    border-bottom:#F6154B 4px solid ;
+}
+
+.navigasi .active{
+    color: #F6154B;
+}
+
+
+
+
+
+
+ .container {
+    width: 60%;
+    margin: auto;
+    font-size: 1.7rem;
+}
+
+.about{
+    margin-top: 240px;
+}
+
+.about a:visited{
+    border-bottom:#F6154B 4px solid ;
+}
+
+.about h1{
+    text-align: center;
+    font-weight: 600;
+    animation: type 3s ;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    
+   
+}
+
+
+
+@keyframes type {
+    from{
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.about h1 span{
+    color: var(--primary) ;
+}
+
+.about p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.about span{
+    color: var(--primary);
+}
+
+.skills{
+    display: grid;
+    padding-bottom: 80px;
+}
+
+.skills h1 span{
+    color: var(--primary) ;
+}
+
+.skills h1{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 220px;
+}
+
+.skills   img {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    
+
+}
+
+.product{
+    display: grid;
+
+   
+    
+}
+.product h1{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 120px;
+}
+
+.product h1 span{
+    color: var(--primary) ;
+}
+
+.product .category{
+    display: grid;
+    grid-template-columns:repeat(4, 2fr) ;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 10px;
+    
+} 
+
+
+.product .category .category-child img{
+    width: 60%;
+    
+
+}
+
+.product .category .category-child button{
+  
+    border: none;   
+    border-radius: 24px;
+    color: white;
+    background-color: var(--primary);
+    width: 60%;
+    height: 30px;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+
+.product .category .category-child h3{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.contact{
+    padding-top: 300px;
+    padding-bottom: 190px;
+}
+.contact h1{
+    font-weight: 500;
+    margin-bottom: -20px;
+    margin-top: -100px;
+}
+
+.contact .person{
+    display: flex;
+    gap: 10px;
+    margin-bottom: -30px;
+}
+
+.contact .person img{
+    width: 1.2em;
+}
+
+.contact .person p.email{
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.contact p{
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+
+.contact a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 680px) {
+    .container{
+        width: 80%;
+    }
+
+    .skills   img {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        
+    
+    }
+
+    .product .category{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr) ;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 10px;
+        
+    }
+
+    .product .category .category-child button{
+  
+        border: none;   
+        border-radius: 24px;
+        color: white;
+        background-color: var(--primary);
+        width: 80%;
+        height: 30px;
+        align-items: center;
+        font-size: 16px;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+
+    
+}
